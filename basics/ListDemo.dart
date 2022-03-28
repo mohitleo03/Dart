@@ -15,6 +15,26 @@ void main() {
   prices.add(888); //will add in the end
   prices.insert(1, 777); //will add this value at given index
   print(prices);
+  print(prices.remove(10)); //finds the element & remove it
+  print(prices.removeAt(1)); //remove element at that index
+  print(prices.removeLast()); //removes last element
+  print(prices);
+  prices.removeRange(
+      1, 3); //removes element from a starting index to ending index
+  prices.removeWhere((int price) =>
+      price >= 100); //removes element where our condition matches
+  print(prices
+      .indexOf(91)); //returns index of this element if not found returns -1
+  prices[0] = 888; //random access of list elements
+  print(prices[0]);
+  prices.elementAt(0); //returns elemet at this index
+  print(prices);
+  prices.forEach((element) {
+    print("element is $element");
+  }); //iterarte the list don't return it
+  print(prices.contains(200)
+      ? "Found"
+      : "Not Found"); //checks whether the list contain this element or not
   prices.skipWhile((value) => value > 20).forEach((element) {
     print(element);
   });
@@ -70,26 +90,6 @@ void main() {
     //tells that we have next element or not
     print(iterator.current); //gives the current element
   }
-  print(prices.remove(10)); //finds the element & remove it
-  print(prices.removeAt(1)); //remove element at that index
-  print(prices.removeLast()); //removes last element
-  print(prices);
-  prices.removeRange(
-      1, 3); //removes element from a starting index to ending index
-  prices.removeWhere((int price) =>
-      price >= 100); //removes element where our condition matches
-  print(prices
-      .indexOf(91)); //returns index of this element if not found returns -1
-  prices[0] = 888; //random access of list elements
-  print(prices[0]);
-  prices.elementAt(0); //returns elemet at this index
-  print(prices);
-  prices.forEach((element) {
-    print("element is $element");
-  }); //iterarte the list don't return it
-  print(prices.contains(200)
-      ? "Found"
-      : "Not Found"); //checks whether the list contain this element or not
   prices.clear(); //empty the list
   print(prices);
 }
