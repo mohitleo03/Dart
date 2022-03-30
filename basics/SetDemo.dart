@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  Set<int> set = {500, 499, 20, 30, 40, 10};
+  Set<int> set = {500, 499, 20, 30, 40, 10, 10, 20};
   var set2 = {10, 30, 20, 10, 60};
   set.add(50);
   set.forEach((element) {
