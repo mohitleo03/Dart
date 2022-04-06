@@ -12,4 +12,8 @@ void main() {
   print(sum);
   temp.sort((int first, int second) => first > second ? -1 : 1);
   print(temp);
+  int x = 1;
+  int y;
+  y = ++x + x;
+  print("x is $x & y is $y");
 }
